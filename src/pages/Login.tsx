@@ -35,7 +35,7 @@ const Login = () => {
         title: "Success",
         description: "Welcome back!"
       });
-      navigate("/dashboard");
+      navigate("/");
     }, 1500);
   };
   return <div className="min-h-screen flex items-center justify-center bg-muted/30 p-4 md:p-8">
