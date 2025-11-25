@@ -7,6 +7,7 @@ import { Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Separator } from "@/components/ui/separator";
 import loginGradient from "@/assets/login-gradient.jpg";
+import toorriiLogo from "@/assets/toorrii-logo.png";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -46,20 +47,22 @@ const Login = () => {
       <div className="w-full max-w-6xl bg-card rounded-3xl shadow-2xl overflow-hidden">
         <div className="grid md:grid-cols-2 min-h-[600px]">
           {/* Left Column - Form */}
-          <div className="flex items-center justify-center p-8 md:p-12">
+          <div className="flex items-center justify-center p-10 md:p-14">
             <div className="w-full max-w-md">
-              {/* Branding */}
-              <div className="mb-8">
-                <h1 className="text-3xl font-semibold text-foreground mb-2">
-                  Sign in to Toorrii Admin
-                </h1>
+              {/* Logo */}
+              <div className="mb-10">
+                <img 
+                  src={toorriiLogo} 
+                  alt="Toorrii Logo" 
+                  className="h-16 w-auto mb-6"
+                />
                 <p className="text-sm text-muted-foreground">
-                  Access your queue management dashboard
+                  Administrator Portal
                 </p>
               </div>
 
               {/* Tabs */}
-              <div className="flex gap-2 mb-8">
+              <div className="flex gap-3 mb-10">
                 <button
                   onClick={() => setActiveTab("signin")}
                   className={`flex-1 py-2.5 px-4 rounded-full text-sm font-medium transition-all duration-200 ${
@@ -83,7 +86,7 @@ const Login = () => {
               </div>
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <Input
                     id="email"
@@ -150,14 +153,14 @@ const Login = () => {
               </form>
 
               {/* Signature Section */}
-              <div className="mt-8 pt-6">
-                <Separator className="mb-6" />
-                <div className="text-center space-y-1">
-                  <p className="text-xs font-medium text-primary">
-                    Toorrii Queue Management System
+              <div className="mt-10 pt-8">
+                <Separator className="mb-8" />
+                <div className="text-center space-y-2">
+                  <p className="text-xs font-medium text-muted-foreground">
+                    Secure administrative access
                   </p>
-                  <p className="text-xs text-muted-foreground">
-                    Streamline operations, optimize wait times, enhance customer experience
+                  <p className="text-xs text-muted-foreground/70">
+                    © 2024 Toorrii. All rights reserved.
                   </p>
                 </div>
               </div>
