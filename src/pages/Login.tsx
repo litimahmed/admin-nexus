@@ -7,7 +7,6 @@ import { Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Separator } from "@/components/ui/separator";
 import loginGradient from "@/assets/login-gradient.jpg";
-import toorriiLogo from "@/assets/toorrii-logo.png";
 const Login = () => {
   const navigate = useNavigate();
   const {
@@ -44,9 +43,14 @@ const Login = () => {
           {/* Left Column - Form */}
           <div className="flex items-center justify-center p-10 md:p-14">
             <div className="w-full max-w-md">
-              {/* Logo */}
+              {/* Header */}
               <div className="mb-12">
-                <img src={toorriiLogo} alt="Toorrii Logo" className="h-24 w-auto object-contain" />
+                <h1 className="text-4xl font-bold text-primary mb-3">
+                  Admin Access
+                </h1>
+                <p className="text-base text-muted-foreground">
+                  Secure login to your queue management system
+                </p>
               </div>
 
               {/* Tabs */}
