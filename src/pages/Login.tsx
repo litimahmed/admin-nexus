@@ -46,7 +46,7 @@ const Login = () => {
             <div className="w-full max-w-md">
               {/* Logo */}
               <div className="mb-10">
-                <img src={toorriiLogo} alt="Toorrii Logo" className="h-20 w-auto mb-6 scale-150 translate-x-36 " />
+                <img src={toorriiLogo} alt="Toorrii Logo" className="h-20 w-auto mb-6 scale-150 " />
                 <p className="text-sm text-muted-foreground">
                   Administrator Portal
                 </p>
