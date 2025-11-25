@@ -6,7 +6,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Separator } from "@/components/ui/separator";
-import loginGradient from "@/assets/login-gradient.jpg";
+import loginGradient from "@/assets/login-gradient-teal.jpg";
 const Login = () => {
   const navigate = useNavigate();
   const {
