@@ -48,7 +48,16 @@ const Login = () => {
               <div className="mb-10">
                 <img src={toorriiLogo} alt="Toorrii Logo" className="h-20 w-auto mb-6 scale-150 " />
                 <p className="text-sm text-muted-foreground">
-                  Administrator Portal
+                  Access your queue management dashboard
+
+
+
+
+
+
+
+
+
                 </p>
               </div>
 
