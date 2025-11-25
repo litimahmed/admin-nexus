@@ -46,7 +46,7 @@ const Login = () => {
               {/* Header */}
               <div className="mb-12">
                 <h1 className="text-4xl font-bold text-primary mb-3">
-                  Admin Access
+                  Access to Toorrii   
                 </h1>
                 <p className="text-base text-muted-foreground">
                   Secure login to your queue management system
