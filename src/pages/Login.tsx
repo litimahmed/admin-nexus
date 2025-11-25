@@ -45,20 +45,8 @@ const Login = () => {
           <div className="flex items-center justify-center p-10 md:p-14">
             <div className="w-full max-w-md">
               {/* Logo */}
-              <div className="mb-10">
-                <img src={toorriiLogo} alt="Toorrii Logo" className="h-20 w-auto mb-6 scale-150 object-fill mb-16 " />
-                <p className="text-sm text-muted-foreground">
-                  Access your queue management dashboard
-
-
-
-
-
-
-
-
-
-                </p>
+              <div className="mb-12">
+                <img src={toorriiLogo} alt="Toorrii Logo" className="h-24 w-auto object-contain" />
               </div>
 
               {/* Tabs */}
